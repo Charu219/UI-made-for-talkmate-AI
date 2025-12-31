@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Features – Talkmate AI</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <img src="logo.svg" alt="Talkmate AI Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Features</a></li>
+        <li><a href="advantage.html">Advantage</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-btns">
+      <a href="login.html" class="btn outline">Login</a>
+      <a href="signin.html" class="btn filled">Sign Up</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Experience <span class="highlight">Real-Time Feedback</span> and Improve Your English Skills</h1>
+      <p>
+        Talkmate AI provides instant feedback on your English conversation skills. 
+        Our AI-powered dialogue system analyzes your grammar, fluency, and sentence structure in real-time, 
+        offering personalized corrections and suggestions. With our audio correction feature, you can hear 
+        the corrected sentences, helping you understand and improve your pronunciation and fluency.
+      </p>
+    </div>
+    <div class="hero-images">
+      <img src="image1.jpg" alt="Student with tablet">
+    </div>
+  </section>
+
+  <!-- Features Cards -->
+  <section class="cards">
+    <div class="card">
+      <img src="1image.webp" alt="AI Dialogue">
+      <h1>AI-Dialogue</h1> 
+      <p>Engage in realistic conversations with our AI. Receive instant feedback on grammar, fluency, and sentence structure.</p>
+      <a href="ai-dialogue.html" class="btn outline">Learn More</a>
+    </div>
+    <div class="card">
+      <img src="2image.webp" alt="Detailed Feedback">
+      <h1>Detailed Feedback</h1>
+      <p>Get comprehensive feedback on your grammar, fluency, and sentence corrections. Understand your mistakes and improve.</p>
+      <a href="detailed-feedback.html" class="btn outline">Learn More</a>
+    </div>
+    <div class="card">
+      <img src="3image.webp" alt="Audio Correction">
+      <h1>Audio Correction</h1>
+      <p>Listen to corrected sentences and improve your pronunciation and fluency with confidence.</p>
+      <a href="audio-correction.html" class="btn outline">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Advantage Section -->
+  <section class="advantage">
+    <h2 style="font-size: 48px; font-weight: 900; line-height: 1.2">Discover the <span class="highlight">Talkmate AI Advantage</span></h2>
+    <p class="adv-desc">
+      <b>Experience how our platform transforms English learning with engaging dialogues and instant feedback.</b>
+    </p>
+    <a href="#" class="btn filled">Try Now</a>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <div>
+      <h1>📧 Email Us</h1>
+      <p class="desc">
+        <strong>Reach out to the Talkmate AI team</strong> via email for inquiries, support, or feedback.  
+        We are committed to helping you improve your English speaking skills with personalized assistance.
+      </p>
+      <p class="contact-detail"><strong>support@talkmateai.com</strong></p>
+    </div>
+    
+    <div>
+      <h1>📞 Call Us</h1>
+      <p class="desc">
+        <strong>Prefer to speak directly?</strong> Call our support team for assistance with our platform,  
+        questions about features, or feedback. Our team is available to help you enhance your English communication skills.
+      </p>
+      <p class="contact-detail"><strong>+1 (555) 123-4567</strong></p>
+    </div>
+    
+    <div>
+      <h1>📍 Visit Us</h1>
+      <p class="desc">
+        <strong>Come visit our office</strong> or send us mail. We are located in the heart of the city,  
+        dedicated to supporting your language learning journey.
+      </p>
+      <p class="contact-detail"><strong>123 Language Ave, Suite 100, Language City, Country</strong></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Talkmate AI. All rights reserved. | Terms and Conditions | Privacy Policy</p>
+  </footer>
+
+  <script>
+    const logoAI = document.querySelector(".logo-ai");
+
+    // Pulse effect every 1.5 seconds
+    setInterval(() => {
+      logoAI.style.textShadow = "0 0 12px #00b894, 0 0 20px #00b894";
+      logoAI.style.color = "#00d4a0";
+
+      setTimeout(() => {
+        logoAI.style.textShadow = "none";
+        logoAI.style.color = "#00b894";
+      }, 600);
+    }, 1500);
+  </script>
+
+</body>
+</html>

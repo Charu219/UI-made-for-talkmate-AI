@@ -1,0 +1,147 @@
+/* General Layout and Reset */
+body {
+  margin: 0;
+  font-family: 'Cambria'; /* Assuming you've linked the font in aidashboard.html */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dashboard-container {
+  /* Use a container that sets the max-width and centers the content */
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Header/Navbar */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+  position: sticky; /* Make the header sticky */
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-header .logo img {
+  height: 40px; /* Adjust as needed */
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav li {
+  margin-left: 2rem;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #007bff; /* Example hover color */
+}
+
+/* Sections */
+.hero-section, .content-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  gap: 2rem;
+}
+
+.hero-section {
+  background-color: #f8f9fa; /* A light background color */
+}
+
+.hero-section .text-content, .content-section .text-content {
+  flex: 1;
+}
+
+/* FIX FOR THE ALIGNMENT ISSUE */
+.hero-section.explore-paths-section {
+    align-items: flex-start; /* Align items to the top */
+    gap: 4rem; /* Increase the space between the two columns */
+}
+
+.explore-paths-section .text-content {
+    flex: 1;
+    max-width: 400px; /* Give the text a defined width */
+}
+
+.explore-content {
+    flex: 2; /* Let this container take up more space */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center cards vertically inside */
+}
+
+.hero-section .image-grid {
+    /* Updated styles for the image grid inside the new wrapper */
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+.hero-section .image-grid img {
+    width: 30%; /* Set a specific width for each image */
+    height: auto;
+    border-radius: 8px;
+}
+
+.card-grid {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    width: 100%; /* Ensure the card grid fills its container */
+}
+
+.path-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  flex: 1;
+}
+
+/* Specific Section Styles */
+#normal-communication, #students-qa, #group-discussion, #hr-questions {
+  background-color: #fff;
+}
+
+.reverse-layout {
+  flex-direction: row-reverse;
+}
+
+.content-section .image-content {
+  flex: 1;
+}
+
+.content-section .image-content img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Footer */
+.main-footer {
+  background-color: #121212;
+  color: #f1f1f1;
+  padding: 2rem;
+  text-align: center;
+}
+
+.main-footer .footer-content a {
+  color: #f1f1f1;
+  text-decoration: none;
+  margin: 0 1rem;
+}

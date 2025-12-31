@@ -1,0 +1,205 @@
+/* General */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #222;
+  background: #fff;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .logo {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* Logo */
+.logo img {
+  height: 40px;   /* Adjust depending on your navbar height */
+  width: auto;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover effect */
+.logo img:hover {
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 6px #00b894);
+}
+
+
+
+
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.navbar nav ul li a {
+  font-weight: 500;
+  color: #333;
+}
+
+.nav-btns {
+  display: flex;
+  gap: 12px;
+}
+
+/* Buttons */
+.btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn.outline {
+  border: 1px solid #00b894;
+  color: #00b894;
+}
+
+.btn.outline:hover {
+  background: #00b894;
+  color: #fff;
+}
+
+.btn.filled {
+  background: #00b894;
+  color: #fff;
+}
+
+.btn.filled:hover {
+  opacity: 0.85;
+}
+
+
+/*  Features */ 
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+.feature-card {
+  width: 22%;
+  min-width: 250px;
+  text-align: center;
+  margin: 15px;
+}
+.feature-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.feature-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f9f9f9;
+}
+.cta h2 {
+    font-size: 48px;       /* make heading bigger */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #111; 
+}
+.cta p {
+  margin-bottom: 20px;
+}
+.try-now {
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.cta .btn.try-now {
+  display: inline-block;
+  background-color: #00b894; /* green box */
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.cta .btn.try-now:hover {
+  background-color: #218838; /* darker green on hover */
+}
+
+/* Contact */
+.contact h2 {
+  font-size: 40px;    /* a little bigger */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #111;        /* darker for emphasis */
+}
+
+
+.contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+.contact-info {
+  margin: 20px 0;
+}
+.contact-info p {
+  margin: 5px 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #f1f1f1;
+}
+.footer-links {
+  margin-bottom: 10px;
+}
+.footer-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+footer a {
+  color: #1abc9c;
+}
+
+
+
+.navbar nav ul li a:hover,
+.navbar nav ul li a.active {
+  color: #00b894;
+}
